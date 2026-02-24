@@ -10,14 +10,19 @@ A modern, feature-rich salon and spa management platform built with React, Tailw
 - **E-commerce Shop**: Full-featured product marketplace with filters, cart, and ratings
 - **Responsive Design**: Beautiful UI that works on all devices
 
-### Business Management Features
+### Business Management Features (CRM)
 - **Admin Dashboard**: Real-time analytics and business insights
-- **Revenue Tracking**: Monitor daily/monthly revenue and growth trends
-- **Appointment Management**: View and manage all appointments
-- **Staff Performance**: Track staff metrics and performance
-- **Client Management**: Comprehensive client profiles and history
+- **Client Management**: Comprehensive client profiles, appointments, and history
+- **Invoices**: Professional invoice creation and payment tracking
+- **Sales History**: Complete transaction and appointment tracking
+- **Services Catalog**: Full service management with pricing, duration, and options
+- **Packages**: Bundle services and products for loyalty programs
+- **Staff Management**: Team scheduling, permissions, and performance tracking
+- **Inventory**: Product tracking with barcode scanning and stock alerts
+- **Marketing**: Email and text campaign management
 
 ### UI/UX Features
+- Dual Navigation: Top navbar for customer pages, sidebar for CRM
 - Gradient designs with pink/rose theme
 - Smooth animations and transitions
 - Modern card-based layouts
@@ -50,6 +55,8 @@ npm run preview
 ```
 
 ## 🎨 Pages
+
+### Customer Pages (Top Navigation)
 
 1. **Home** (`/`)
    - Hero section with stats
@@ -88,15 +95,85 @@ npm run preview
 
 6. **About** (`/about`)
    - Company mission
-   - Business statistics
+   - Team members
    - Trust indicators
+
+### CRM Pages (Sidebar Navigation)
+
+7. **CRM Dashboard** (`/crm`)
+   - Overview of all CRM modules
+   - Quick stats and metrics
+   - Module cards with navigation
+   - Quick action buttons
+
+8. **Clients** (`/crm/clients`)
+   - Client list and search
+   - Add/edit client profiles
+   - Client detail modal with tabs
+   - Appointment history
+   - Notes and forms
+
+9. **Invoices** (`/crm/invoices`)
+   - Create professional invoices
+   - Send payment links via email/text
+   - Track invoice status (paid, pending, overdue)
+   - Invoice preview
+
+10. **Sales History** (`/crm/sales`)
+    - Completed appointments
+    - Transaction history
+    - Revenue tracking
+
+11. **Services Management** (`/crm/services`)
+    - Service catalog configuration
+    - Pricing (fixed, starting at, hidden)
+    - Duration and processing time
+    - Service options and categories
+    - Resource assignment
+    - Suggested services
+
+12. **Packages** (`/crm/packages`)
+    - Create service/product bundles
+    - Package pricing and discounts
+    - Products and services inclusion
+    - Expiration settings
+    - Terms and conditions
+
+13. **Staff** (`/crm/staff`)
+    - Team member management
+    - Roles and permissions
+    - Staff scheduling
+    - Multi-step onboarding wizard
+
+14. **Inventory** (`/inventory`)
+    - Product inventory tracking
+    - Barcode scanning integration
+    - Stock level alerts
+    - Product search and filters
+    - Automatic sync with POS
+
+15. **Marketing** (`/marketing`)
+    - Email campaigns (free to send)
+    - Text message campaigns
+    - Client targeting and filtering
+    - Campaign tracking
+    - Credit management
 
 ## 🎯 Key Components
 
-### Navbar
+### Navbar (Customer Pages)
 - Responsive navigation with mobile menu
 - Active route highlighting
 - Gradient logo and branding
+- CRM dropdown menu
+
+### Sidebar (CRM Pages)
+- Collapsible menu sections
+- User profile display
+- Progress tracking
+- Expandable submenus
+- Active state highlighting
+- Mobile responsive with overlay
 
 ### Cards
 - Reusable card components
@@ -112,6 +189,11 @@ npm run preview
 - Styled input fields
 - Form validation
 - Multi-step forms
+
+### Modals
+- Slide-in panels
+- Full-screen forms
+- Multi-tab interfaces
 
 ## 🎨 Design System
 
